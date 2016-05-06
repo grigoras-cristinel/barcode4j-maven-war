@@ -43,7 +43,7 @@ import org.apache.avalon.framework.logger.Logger;
  *
  * @version $Id: BarcodeServlet.java,v 1.8 2010/10/05 06:53:56 jmaerki Exp $
  */
-@WebServlet(name = "BarcodeServlet", urlPatterns = { "/gensvg", "/genbc" })
+@WebServlet(name = "BarcodeServlet", urlPatterns = { "/gensvg/*", "/genbc/*" })
 public class BarcodeServlet extends HttpServlet {
 
    private static final long serialVersionUID = -1612710758060435089L;
