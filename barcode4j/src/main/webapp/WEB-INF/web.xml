@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+	<mime-mapping>
+		<extension>svg</extension>
+		<mime-type>image/svg+xml</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>svgz</extension>
+		<mime-type>image/svg+xml</mime-type>
+	</mime-mapping>
+	<error-page>
+		<exception-type>org.krysalis.barcode4j.BarcodeException</exception-type>
+		<location>/errsvg</location>
+	</error-page>
+</web-app>
